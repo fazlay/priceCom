@@ -1,0 +1,177 @@
+<link href='//fonts.googleapis.com/css?family=Roboto:100,400,300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<div class="quiz_window">
+  <div class="quiz_window_header">
+    <div class="quiz_window_title">Price </div>
+  </div>
+  <div class="quiz_window_body">
+    <div class="guiz_window_awards">
+      <ul class="guiz_awards_row guiz_awards_header">
+        <li class="guiz_awards_header_star">&nbsp;</li>
+        <li class="guiz_awards_header_title">Company Name</li>
+        <li class="guiz_awards-header_track">Price (Taka)</li>
+        <li class="guiz_awards_header_time">Availability</li>
+      </ul>
+      <ul class="guiz_awards_row guiz_awards_row_even">
+        <li class="guiz_awards_star"><span class="star goldstar"></span></li>
+        <li class="guiz_awards_title">Rayns
+        </li>
+        <li class="guiz_awards_track">8 $</li>
+        <li class="guiz_awards_time">Available</li>
+      </ul>
+    </div>
+</div>
+
+
+//-------------------------------------------
+* {box-sizing: border-box;}
+*:hover, *:focus {outline:0}
+html {height: 100%;}
+body {
+  position: relative;
+  height: 100%;
+  background: rgba(0,0,0,.3);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 17px;
+  color:#777;
+}
+button, select, input {
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+}
+.quiz_window {
+  position: absolute;
+  left:0; right:0;
+  top: 50px;
+  margin: auto;
+  width: 600px;
+  border-radius: 4px;
+  background: #fff;
+  overflow: hidden;
+}
+.quiz_window_header {
+  padding: 20px 15px;
+  text-align:center;
+  position: relative;
+}
+.quiz_window_title {
+  font-size: 26px;
+}
+.quiz_window_close {
+  position: absolute;
+  top:20px;
+  right:20px;
+  padding:0;
+  background:none;
+  border:0;
+  width: 30px;
+  height: 30px;
+  font-size: 60px;
+  font-weight: 100;
+  line-height: 24px;
+  color: #777;
+  cursor:pointer;
+}
+.quiz_window_body {
+  background-color: #f9f9f9;
+}
+.guiz_awards_row {
+  margin:0;
+  padding: 10px 40px;
+  list-style: none;
+}
+.guiz_awards_row:after {
+  content: '';
+  display: table;
+  clear:both;
+}
+.guiz_awards_row_even {
+  background-color: #fff;
+}
+.guiz_awards_row li {
+  display:inline-block;
+  vertical-align: top;
+  float: left;
+}
+.guiz_awards_header {
+  text-align: center;
+  padding: 20px 40px;
+}
+.guiz_awards_star, .guiz_awards_track, .guiz_awards_time,
+.guiz_awards_header_star, .guiz_awards_header_track, .guiz_awards_header_time{
+  min-width: 54px;
+  text-align: center;
+  width: 16%;
+}
+.guiz_awards_title {
+  width: 40%;
+  min-width: 160px;
+  font-size: 18px;
+  font-weight: normal;
+  padding-top: 3px;
+}
+.guiz_awards_header_title {
+  width: 40%;
+  min-width: 160px;
+}
+.guiz_awards_subtitle {
+  color: #858585;
+  font-size: 14px;
+  font-weight: 300;
+}
+.guiz_awards_track, .guiz_awards_time {
+  width: 22%;
+  min-width: 80px;
+  font-size: 18px;
+  line-height: 45px
+}
+.guiz_awards_header_track, .guiz_awards_header_time {
+  width: 22%;
+  min-width: 80px;
+}
+.guiz_awards_track .null, .guiz_awards_time .null {
+  color:#bababa;
+}
+.star {
+  display:block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #bdc2c1;
+  background: #d6d6d6;  
+}
+.goldstar {
+  border-color: #4c8193;
+  background: #14b0bf;  
+}
+
+.guiz_awards_buttons {
+  background: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+.guiz_awards_but_back {
+  display:inline-block;
+  background: none;
+  border: 1px solid #61a3e5;
+  border-radius: 21px;
+  padding: 7px 40px 7px 20px;
+  color: #61a3e5;
+  font-size: 17px;
+  cursor:pointer;
+  transition: all .3s ease;
+}
+
+.guiz_awards_but_back:hover {
+  background: #61a3e5;
+  color: #fff;
+}
+
+.guiz_awards_but_back i {
+  font-size: 26px;
+  line-height: 17px;
+  margin-right: 20px;
+  position: relative;
+  top: 2px;
+}
