@@ -1,8 +1,10 @@
 import React from 'react'
+import NavBar from './NavBar/NavBar'
 import styles from './PriceTable.module.scss'
 
  const PriceTable = () => {
     return (
+        <>
    <div className={styles.quiz_window}>
         <div className={styles.quiz_window_header}>
             <div className={styles.quiz_window_title}>Price </div>
@@ -24,6 +26,7 @@ import styles from './PriceTable.module.scss'
             </div>
         </div>
     </div>
+    </>
     )
 }
 
